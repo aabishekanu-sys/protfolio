@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abi | Portfolio</title>
+
+<link rel="stylesheet" href="index.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="logo">ABISHEK</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+    <div class="hero-text">
+        <h1>Hi, I'm <span>Abi</span></h1>
+        <h2 class="typing"></h2>
+        <a href="resume.pdf" download class="btn">Download Resume</a>
+    </div>
+    <div class="hero-img">
+        <img src="image.jpg.jpeg" alt="Profile">
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <h2>About Me</h2>
+    <p>I am passionate about UI/UX, Machine Learning and Web Development.
+        I am a passionate and dedicated aspiring AI & Machine Learning developer with a strong interest in building intelligent and user-friendly solutions. I enjoy working with technologies like Python, SQL, JavaScript, and Machine Learning algorithms such as Linear Regression, Logistic Regression, and KNN.
+
+Along with technical skills, I focus on creating clean and modern UI/UX designs for web applications. I believe that technology should not only work efficiently but also provide a great user experience.
+
+I am continuously learning, improving my skills, and building projects that help me grow both technically and professionally. My goal is to develop innovative solutions that solve real-world problems and contribute meaningfully to the tech industry.
+    </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <h2>My Skills</h2>
+    <div class="skill-container">
+        <div class="skill-card">Python</div>
+        <div class="skill-card">HTML&CSS</div>
+        <div class="skill-card">SQL</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">Machine Learning</div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <h2>My Projects</h2>
+    <div class="project-container">
+        <div class="project-card">
+            <img src="fake.jpg">
+            <div class="project-info">
+                <h3>AI Fake Profile Detector</h3>
+                <p>ML-based fake account detection system.</p>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="ai-plants.jpg">
+            <div class="project-info">
+                <h3>plants</h3>
+                <p>A System that detects plants diseases from leaf image.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CERTIFICATES -->
+<section id="certificates">
+    <h2>My Certificates</h2>
+    <div class="certificate-container">
+        <div class="certificate-card">
+            <h3>Intenship Certificate</h3>
+            <a href="https://drive.google.com/file/d/10TyChtx0NAt2EqZ3vGag-SKb4QlRWijA/view?usp=drivesdk" target="_blank">View</a>
+        </div>
+
+        <div class="certificate-card">
+            <h3>SQL Certificate</h3>
+            <a href="https://drive.google.com/file/d/1C-qY83-hIoXSp63yhcVbXzSzlGd-jonc/view?usp=drivesdk" target="_blank">View</a>
+        </div>
+
+        <div class="certificate-card">
+            <h3>ML Certificate</h3>
+            <a href="https://drive.google.com/file/d/1B72And4pLoUKzCduu_mbWz-xiP0XSysW/view?usp=drivesdk" target="_blank">View</a>
+        </div>
+    </div>
+</section>
+
+<!-- ========================= -->
+<!-- NEW GALLERY SECTION -->
+<!-- ========================= -->
+<section id="gallery">
+    <h2>Design Gallery</h2>
+    <div class="gallery-grid">
+        <img src="plants.png" onclick="openModal(this)">
+        <img src="ml.png" onclick="openModal(this)">
+        <img src="out.png" onclick="openModal(this)">
+      
+    </div>
+</section>
+
+<!-- IMAGE MODAL -->
+<div id="imageModal" class="modal" onclick="closeModal()">
+    <img id="modalImg">
+</div>
+
+<!-- CONTACT -->
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/abishek-a-234bb5365?utm_source=share_via&utm_content=profile&utm_medium=member_android"><i class="fab fa-linkedin"></i></a>
+        <a href="https://wa.me/qr/EKMRALUXNLZWH1"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/_abi_spotend_2k5?igsh=MXE5bzB2cThyaWxuNg=="><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/aabishekanu-sys"><i class="fab fa-github"></i></a>
+    </div>
+    <p>© 2026 Abi | Designed with ❤️</p>
+</footer>
+
+<script src="index.js"></script>
+</body>
+</html>

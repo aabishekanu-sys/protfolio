@@ -1,0 +1,45 @@
+// Typing Animation
+const text = ["Web Developer", "Creative Thinker"];
+let index = 0;
+let charIndex = 0;
+const typing = document.querySelector(".typing");
+
+function typeEffect(){
+    if(charIndex < text[index].length){
+        typing.textContent += text[index].charAt(charIndex);
+        charIndex++;
+        setTimeout(typeEffect,100);
+    } else {
+        setTimeout(eraseEffect,1500);
+    }
+}
+
+function eraseEffect(){
+    if(charIndex > 0){
+        typing.textContent = text[index].substring(0,charIndex-1);
+        charIndex--;
+        setTimeout(eraseEffect,50);
+    } else {
+        index = (index+1)%text.length;
+        setTimeout(typeEffect,200);
+    }
+}
+
+typeEffect();
+
+// Project Button
+function openProject(){
+    alert("Project Details Coming Soon!");
+}
+
+// Gallery Modal
+function openModal(img){
+    const modal = document.getElementById("imageModal");
+    const modalImg = document.getElementById("modalImg");
+    modal.style.display = "flex";
+    modalImg.src = img.src;
+}
+
+function closeModal(){
+    document.getElementById("imageModal").style.display = "none";
+}
